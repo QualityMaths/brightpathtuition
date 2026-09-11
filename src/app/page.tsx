@@ -54,7 +54,7 @@ export default function HomePage() {
             Learning is a lifelong adventure
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85 sm:text-xl">
-            Expert Maths-led tuition in English and Science — exam-board aligned,
+            Expert Maths tuition for KS3, GCSE and A-level — exam-board aligned,
             progress you can measure, confidence that lasts.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -68,7 +68,7 @@ export default function HomePage() {
               href="/subjects/"
               className="rounded-md border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-white backdrop-blur hover:bg-white/20 transition"
             >
-              Explore subjects
+              Explore Maths
             </Link>
           </div>
         </div>
@@ -134,8 +134,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Subjects"
-            title="Maths first. English & Science with the same care."
-            subtitle="We specialise in school Maths and pair it with strong English and Science support — AQA, Edexcel and OCR."
+            title="Maths now. Science next. English later."
+            subtitle="We are launching as a Maths-specialist tuition service. Science is next on the roadmap, then English — same quality throughout."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {SUBJECTS.map((s) => (
@@ -143,23 +143,33 @@ export default function HomePage() {
                 key={s.name}
                 className="card-lift rounded-2xl border border-navy/5 bg-white p-7 shadow-sm"
               >
-                {s.lead && (
-                  <span className="mb-3 inline-block rounded-full bg-gold/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-navy">
-                    Lead subject
-                  </span>
-                )}
+                <span
+                  className={`mb-3 inline-block rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider ${
+                    s.status === "available"
+                      ? "bg-gold/20 text-navy"
+                      : "bg-navy/5 text-muted"
+                  }`}
+                >
+                  {s.badge}
+                </span>
                 <h3 className="text-xl font-bold text-navy">{s.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{s.blurb}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {s.boards.map((b) => (
-                    <span
-                      key={b}
-                      className="rounded-md bg-navy/5 px-2.5 py-1 text-xs font-semibold text-navy"
-                    >
-                      {b}
-                    </span>
-                  ))}
-                </div>
+                {s.status === "available" ? (
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {s.boards.map((b) => (
+                      <span
+                        key={b}
+                        className="rounded-md bg-navy/5 px-2.5 py-1 text-xs font-semibold text-navy"
+                      >
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-gold">
+                    Joining the Bright Path soon
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -168,7 +178,7 @@ export default function HomePage() {
               href="/subjects/"
               className="btn-primary inline-block rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wider"
             >
-              View all subjects
+              See Maths programmes
             </Link>
           </div>
         </div>

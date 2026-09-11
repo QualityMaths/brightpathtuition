@@ -7,7 +7,7 @@ import PlaceholderBanner from "@/components/PlaceholderBanner";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet Bright Path Tuition — London tutors focused on Maths, English and Science for KS3, GCSE and A-level.",
+    "Meet Bright Path Tuition — London Maths tutors for KS3, GCSE and A-level, with Science and English on the roadmap.",
 };
 
 export default function AboutPage() {
@@ -41,7 +41,7 @@ export default function AboutPage() {
               <p>
                 Bright Path Tuition is a London-based tutoring service specialising
                 in <strong className="text-navy">Mathematics</strong>, with strong
-                support in English and Science across KS3, GCSE and A-level.
+                Maths support across KS3, GCSE and A-level — with Science next on the roadmap, then English.
               </p>
               <p>
                 Our tutors know the AQA, Edexcel and OCR specifications inside out.

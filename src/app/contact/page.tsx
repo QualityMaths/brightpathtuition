@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <input
                     name="subjects"
                     className="mt-1.5 w-full rounded-md border border-navy/15 bg-white px-3 py-2.5 outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-                    placeholder="e.g. GCSE Maths Higher, A-level Chemistry"
+                    placeholder="e.g. GCSE Maths Higher, A-level Maths / Further Maths"
                   />
                 </label>
                 <label className="block text-sm">

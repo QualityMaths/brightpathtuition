@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Bright Path Tuition",
-  tagline: "Expert KS3, GCSE & A-level tuition across London",
+  tagline: "Expert Maths tuition for KS3, GCSE & A-level across London",
   domain: "brightpathtuition.london",
   url: "https://brightpathtuition.london",
   email: "hello@brightpathtuition.london",
@@ -33,7 +33,7 @@ export const PROGRAMMES = [
     title: "KS3 Tuition",
     subtitle: "Years 7–9",
     description:
-      "Build rock-solid foundations in Maths, English and Science so secondary school feels manageable — and enjoyable.",
+      "Build rock-solid Maths foundations so secondary school feels manageable — and enjoyable.",
     image:
       "/images/ks3.jpg",
   },
@@ -51,7 +51,7 @@ export const PROGRAMMES = [
     title: "A-level Tuition",
     subtitle: "Years 12–13",
     description:
-      "Deep subject mastery for university pathways — especially Maths, Further Maths, Sciences and English.",
+      "Deep Maths mastery for university pathways — including Further Maths where needed.",
     image:
       "/images/alevel.jpg",
   },
@@ -60,27 +60,30 @@ export const PROGRAMMES = [
 export const SUBJECTS = [
   {
     name: "Mathematics",
-    lead: true,
+    status: "available" as const,
+    badge: "Available now",
     blurb:
-      "Our flagship subject — from KS3 number skills through GCSE Higher and A-level Pure, Statistics and Mechanics.",
+      "Our focus today — from KS3 number skills through GCSE Foundation & Higher to A-level Pure, Statistics and Mechanics (and Further Maths where needed).",
     boards: ["AQA", "Edexcel", "OCR"],
     icon: "maths",
   },
   {
-    name: "English",
-    lead: false,
-    blurb:
-      "Language and Literature support that sharpens analysis, writing craft and exam technique.",
-    boards: ["AQA", "Edexcel", "OCR"],
-    icon: "english",
-  },
-  {
     name: "Science",
-    lead: false,
+    status: "coming_soon" as const,
+    badge: "Next up",
     blurb:
-      "Combined and Triple Science at GCSE, plus Biology, Chemistry and Physics at A-level.",
+      "Coming next. Combined and Triple Science at GCSE, then Biology, Chemistry and Physics at A-level — same exam-board care as our Maths.",
     boards: ["AQA", "Edexcel", "OCR"],
     icon: "science",
+  },
+  {
+    name: "English",
+    status: "coming_soon" as const,
+    badge: "Coming later",
+    blurb:
+      "On the roadmap after Science. Language and Literature support that sharpens analysis, writing craft and exam technique.",
+    boards: ["AQA", "Edexcel", "OCR"],
+    icon: "english",
   },
 ] as const;
 
@@ -117,7 +120,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "Bright Path made A-level Physics click. Past-paper practice every week meant I walked into the exam feeling prepared.",
+      "Bright Path made A-level Maths click. Past-paper practice every week meant I walked into the exam feeling prepared.",
     name: "James K.",
     role: "Student, Year 13 — Camden",
     note: "[EXAMPLE TESTIMONIAL]",

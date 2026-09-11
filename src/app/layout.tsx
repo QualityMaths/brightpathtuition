@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Premium Maths, English and Science tuition for KS3, GCSE and A-level students across Greater London. AQA, Edexcel and OCR. Book a free consultation.",
+    "Premium Maths tuition for KS3, GCSE and A-level students across Greater London. Science and English coming soon. AQA, Edexcel and OCR. Book a free consultation.",
   keywords: [
     "tuition London",
     "GCSE Maths tutor",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     title: `${SITE.name} | London KS3, GCSE & A-level Tuition`,
     description:
-      "Expert school tuition in Maths, English and Science — online and across Greater London.",
+      "Expert Maths tuition for KS3, GCSE and A-level — online and across Greater London. Science next, then English.",
   },
   twitter: {
     card: "summary_large_image",
