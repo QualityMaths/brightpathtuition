@@ -50,6 +50,28 @@ npx serve out
 
 > Replace `brightpathtuition.pages.dev` with the exact Pages hostname Cloudflare assigns.
 
+
+## Deploy free on GitHub Pages (current setup)
+
+This repo deploys automatically via GitHub Actions on every push to `main`.
+
+- Preview URL: `https://qualitymaths.github.io/brightpathtuition/` (until custom domain is live)
+- Custom domain: `brightpathtuition.london` (see CNAME in `public/`)
+
+### Namecheap DNS for the custom domain
+
+In Namecheap → Domain List → **Manage** → **Advanced DNS**, set:
+
+| Type | Host | Value | TTL |
+|------|------|-------|-----|
+| A Record | `@` | `185.199.108.153` | Automatic |
+| A Record | `@` | `185.199.109.153` | Automatic |
+| A Record | `@` | `185.199.110.153` | Automatic |
+| A Record | `@` | `185.199.111.153` | Automatic |
+| CNAME Record | `www` | `qualitymaths.github.io.` | Automatic |
+
+Then in GitHub → repo → **Settings** → **Pages** → Custom domain: `brightpathtuition.london` → enable **Enforce HTTPS** once DNS has propagated.
+
 ## Placeholders for the owner
 
 Search the codebase / UI for `[PLACEHOLDER]` / `[EXAMPLE` / `placeholder`. Update:
