@@ -1,11 +1,11 @@
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 import PlaceholderBanner from "@/components/PlaceholderBanner";
+import FounderPhoto from "@/components/FounderPhoto";
 import {
   PROGRAMMES,
   SITE,
   STEPS,
-  SUBJECTS,
   TRUST_STRIP,
 } from "@/lib/constants";
 
@@ -34,8 +34,6 @@ function IconExpert() {
     </svg>
   );
 }
-
-const AVAILABLE_SUBJECTS = SUBJECTS.filter((s) => s.status === "available");
 
 export default function HomePage() {
   return (
@@ -131,54 +129,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Specialist Maths */}
+      {/* Why families choose Bright Path */}
       <section className="bg-soft py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Subjects"
-            title="Specialist Maths Tuition"
-            subtitle="We're launching Bright Path with one clear focus: outstanding Maths tuition from KS3 through A-Level."
+            eyebrow="Why Bright Path"
+            title="Why families choose Bright Path"
+            subtitle="Clear reasons parents and students trust our live online Maths tuition."
           />
-          <div className="mx-auto flex max-w-xl justify-center">
-            {AVAILABLE_SUBJECTS.map((s) => (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Small groups",
+                text: "Maximum 8 students, allowing individual support.",
+              },
+              {
+                title: "Exam-board focused",
+                text: "Teaching aligned to AQA, Edexcel and OCR where appropriate.",
+              },
+              {
+                title: "Targeted learning",
+                text: "Lessons, homework and feedback focused on each student's gaps.",
+              },
+              {
+                title: "Regular progress feedback",
+                text: "Parents know how their child is progressing and what comes next.",
+              },
+            ].map((item) => (
               <div
-                key={s.name}
-                className="card-lift w-full rounded-2xl border border-navy/5 bg-white p-8 shadow-sm sm:p-10"
+                key={item.title}
+                className="card-lift rounded-2xl border border-navy/8 bg-white p-7 shadow-sm"
               >
-                <span
-                  className={`mb-3 inline-block rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider ${
-                    s.status === "available"
-                      ? "bg-gold/20 text-navy"
-                      : "bg-navy/5 text-muted"
-                  }`}
-                >
-                  {s.badge}
-                </span>
-                <h3 className="text-2xl font-bold text-navy">{s.name}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">{s.blurb}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {s.boards.map((b) => (
-                    <span
-                      key={b}
-                      className="rounded-md bg-navy/5 px-2.5 py-1 text-xs font-semibold text-navy"
-                    >
-                      {b}
-                    </span>
-                  ))}
-                </div>
+                <h3 className="text-lg font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{item.text}</p>
               </div>
             ))}
-          </div>
-          <p className="mt-8 text-center text-sm text-muted">
-            Science and English programmes coming soon.
-          </p>
-          <div className="mt-8 text-center">
-            <Link
-              href="/subjects/"
-              className="btn-primary inline-block rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wider"
-            >
-              See Maths programmes
-            </Link>
           </div>
         </div>
       </section>
@@ -192,12 +177,7 @@ export default function HomePage() {
             subtitle="Qualified teaching, deep subject knowledge and over a decade of tutoring experience."
           />
           <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-navy/8 bg-soft p-8 text-center sm:flex-row sm:items-start sm:gap-8 sm:p-10 sm:text-left">
-            <div
-              className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-navy text-2xl font-bold tracking-wider text-gold ring-4 ring-gold/40"
-              aria-hidden
-            >
-              EG
-            </div>
+            <FounderPhoto />
             <div>
               <h3 className="text-xl font-bold text-navy">Erhan Gulsen</h3>
               <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-gold">
@@ -205,8 +185,11 @@ export default function HomePage() {
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
                 Bright Path Tuition was founded by Erhan Gulsen, a qualified
-                Mathematics teacher with QTS and more than 13 years&apos; tutoring
-                experience.
+                Mathematics teacher with QTS since 2013, a First-Class degree in
+                Mathematics and more than 13 years&apos; tutoring experience. With
+                experience teaching in secondary schools as well as private tuition,
+                Erhan understands both the curriculum and what students need to
+                succeed outside the classroom.
               </p>
               <ul className="mt-5 flex flex-wrap justify-center gap-2 sm:justify-start">
                 {[

@@ -113,7 +113,7 @@ export const STEPS = [
 export const TRUST_STRIP = [
   { value: "13+", label: "Years tutoring experience" },
   { value: "Max 8", label: "Students per group" },
-  { value: "British", label: "Curriculum specialists" },
+  { value: "UK Curriculum", label: "Specialist tuition" },
   { value: "AQA · Edexcel · OCR", label: "Exam boards" },
 ] as const;
 
