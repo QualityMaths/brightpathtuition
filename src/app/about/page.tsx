@@ -16,7 +16,7 @@ export default function AboutPage() {
       <PageHero
         title="About us"
         subtitle="Welcome to Bright Path Tuition — patient teaching, clear plans and results families can see."
-        image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80"
+        image="/images/alevel.jpg"
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1577896851231-70ef04259168?auto=format&fit=crop&w=900&q=80"
+              src="/images/about.jpg"
               alt="Tutor working with a student"
               className="rounded-2xl object-cover shadow-lg shadow-navy/10"
             />

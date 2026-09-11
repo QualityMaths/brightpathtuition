@@ -35,7 +35,7 @@ export const PROGRAMMES = [
     description:
       "Build rock-solid foundations in Maths, English and Science so secondary school feels manageable — and enjoyable.",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+      "/images/ks3.jpg",
   },
   {
     slug: "gcse",
@@ -44,7 +44,7 @@ export const PROGRAMMES = [
     description:
       "Exam-board focused teaching for AQA, Edexcel and OCR. Past papers, mark schemes and confidence that sticks.",
     image:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+      "/images/gcse.jpg",
   },
   {
     slug: "a-level",
@@ -53,7 +53,7 @@ export const PROGRAMMES = [
     description:
       "Deep subject mastery for university pathways — especially Maths, Further Maths, Sciences and English.",
     image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+      "/images/alevel.jpg",
   },
 ] as const;
 

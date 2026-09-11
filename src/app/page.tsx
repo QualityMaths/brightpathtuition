@@ -11,7 +11,7 @@ import {
 } from "@/lib/constants";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80";
+  "/images/hero.jpg";
 
 function IconCert() {
   return (
@@ -255,7 +255,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden py-20">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1920&q=80"
+          src="/images/cta.jpg"
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
