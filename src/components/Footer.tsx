@@ -52,8 +52,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-white/80">
             <li>
               <a href={SITE.phoneHref} className="hover:text-gold transition">
-                {SITE.phone}{" "}
-                <span className="text-xs text-white/40">[placeholder]</span>
+                {SITE.phone}
               </a>
             </li>
             <li>

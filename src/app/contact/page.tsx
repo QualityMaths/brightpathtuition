@@ -46,7 +46,6 @@ export default function ContactPage() {
                   <a href={SITE.phoneHref} className="text-navy font-medium hover:text-gold">
                     {SITE.phone}
                   </a>{" "}
-                  <span className="text-xs">[placeholder]</span>
                 </li>
                 <li>
                   <span className="block text-xs font-semibold uppercase tracking-wider text-gold">
@@ -68,7 +67,6 @@ export default function ContactPage() {
                   >
                     Message us
                   </a>{" "}
-                  <span className="text-xs">[placeholder wa.me]</span>
                 </li>
                 <li>
                   <span className="block text-xs font-semibold uppercase tracking-wider text-gold">

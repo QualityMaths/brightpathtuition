@@ -48,7 +48,6 @@ export default function TopBar() {
             <IconPhone />
             {SITE.phone}
           </a>
-          <span className="hidden text-[10px] text-gold/60 sm:inline">[placeholder]</span>
         </div>
         <p className="truncate text-gold/90">
           Free consultation available · {SITE.hours}
