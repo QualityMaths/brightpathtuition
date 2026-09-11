@@ -2,12 +2,11 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 import PlaceholderBanner from "@/components/PlaceholderBanner";
 import {
-  EXAMPLE_STATS,
   PROGRAMMES,
   SITE,
   STEPS,
   SUBJECTS,
-  TESTIMONIALS,
+  TRUST_STRIP,
 } from "@/lib/constants";
 
 const HERO_IMG =
@@ -36,6 +35,8 @@ function IconExpert() {
   );
 }
 
+const AVAILABLE_SUBJECTS = SUBJECTS.filter((s) => s.status === "available");
+
 export default function HomePage() {
   return (
     <>
@@ -51,11 +52,11 @@ export default function HomePage() {
         <div className="relative mx-auto flex min-h-[78vh] max-w-7xl flex-col items-center justify-end px-4 pb-16 pt-28 text-center sm:min-h-[85vh] sm:px-6 sm:pb-20 lg:px-8">
           <PlaceholderBanner>Live online · British curriculum · KS3 / GCSE / A-level</PlaceholderBanner>
           <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Learning is a lifelong adventure
+            Expert Online Maths Tuition for KS3, GCSE &amp; A-Level
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85 sm:text-xl">
-            Live online Maths tuition for the British curriculum — for students
-            worldwide, with weekday daytime availability. Exam-board aligned,
+            Live, small-group Maths tuition for students following the British
+            curriculum. Exam-board aligned teaching, personalised support and
             progress you can measure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -63,13 +64,13 @@ export default function HomePage() {
               href="/contact/"
               className="btn-gold rounded-md px-7 py-3.5 text-sm uppercase tracking-wider"
             >
-              Book a free consult
+              Book a free consultation
             </Link>
             <Link
               href="/subjects/"
               className="rounded-md border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-white backdrop-blur hover:bg-white/20 transition"
             >
-              Explore Maths
+              View Maths programmes
             </Link>
           </div>
         </div>
@@ -79,9 +80,9 @@ export default function HomePage() {
       <section className="border-b border-navy/5 bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:grid-cols-3 sm:px-6 lg:px-8">
           {[
-            { icon: <IconCert />, text: "Exam-board specialists" },
-            { icon: <IconGrad />, text: "Grades that improve" },
-            { icon: <IconExpert />, text: "Tutors who care" },
+            { icon: <IconCert />, text: "Exam-board aligned" },
+            { icon: <IconGrad />, text: "Small live groups" },
+            { icon: <IconExpert />, text: "Experienced tutors" },
           ].map((item) => (
             <div
               key={item.text}
@@ -130,19 +131,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Subjects */}
+      {/* Specialist Maths */}
       <section className="bg-soft py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Subjects"
-            title="Maths now. Science next. English later."
-            subtitle="We are launching as a Maths-specialist tuition service. Science is next on the roadmap, then English — same quality throughout."
+            title="Specialist Maths Tuition"
+            subtitle="We're launching Bright Path with one clear focus: outstanding Maths tuition from KS3 through A-Level."
           />
-          <div className="grid gap-6 md:grid-cols-3">
-            {SUBJECTS.map((s) => (
+          <div className="mx-auto flex max-w-xl justify-center">
+            {AVAILABLE_SUBJECTS.map((s) => (
               <div
                 key={s.name}
-                className="card-lift rounded-2xl border border-navy/5 bg-white p-7 shadow-sm"
+                className="card-lift w-full rounded-2xl border border-navy/5 bg-white p-8 shadow-sm sm:p-10"
               >
                 <span
                   className={`mb-3 inline-block rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider ${
@@ -153,28 +154,25 @@ export default function HomePage() {
                 >
                   {s.badge}
                 </span>
-                <h3 className="text-xl font-bold text-navy">{s.name}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{s.blurb}</p>
-                {s.status === "available" ? (
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {s.boards.map((b) => (
-                      <span
-                        key={b}
-                        className="rounded-md bg-navy/5 px-2.5 py-1 text-xs font-semibold text-navy"
-                      >
-                        {b}
-                      </span>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-gold">
-                    Joining the Bright Path soon
-                  </p>
-                )}
+                <h3 className="text-2xl font-bold text-navy">{s.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">{s.blurb}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {s.boards.map((b) => (
+                    <span
+                      key={b}
+                      className="rounded-md bg-navy/5 px-2.5 py-1 text-xs font-semibold text-navy"
+                    >
+                      {b}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
-          <div className="mt-10 text-center">
+          <p className="mt-8 text-center text-sm text-muted">
+            Science and English programmes coming soon.
+          </p>
+          <div className="mt-8 text-center">
             <Link
               href="/subjects/"
               className="btn-primary inline-block rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wider"
@@ -185,8 +183,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* Founder */}
       <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Leadership"
+            title="Led by an experienced Maths teacher"
+            subtitle="Qualified teaching, deep subject knowledge and over a decade of tutoring experience."
+          />
+          <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-navy/8 bg-soft p-8 text-center sm:flex-row sm:items-start sm:gap-8 sm:p-10 sm:text-left">
+            <div
+              className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-navy text-2xl font-bold tracking-wider text-gold ring-4 ring-gold/40"
+              aria-hidden
+            >
+              EG
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-navy">Erhan Gulsen</h3>
+              <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-gold">
+                Founder
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
+                Bright Path Tuition was founded by Erhan Gulsen, a qualified
+                Mathematics teacher with QTS and more than 13 years&apos; tutoring
+                experience.
+              </p>
+              <ul className="mt-5 flex flex-wrap justify-center gap-2 sm:justify-start">
+                {[
+                  "Qualified Teacher Status",
+                  "First-Class BSc Mathematics",
+                  "13+ years tutoring experience",
+                ].map((cred) => (
+                  <li
+                    key={cred}
+                    className="rounded-full border border-navy/10 bg-white px-3 py-1.5 text-xs font-semibold text-navy"
+                  >
+                    {cred}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-soft py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="How it works"
@@ -197,7 +239,7 @@ export default function HomePage() {
             {STEPS.map((step) => (
               <div
                 key={step.step}
-                className="relative rounded-2xl border border-navy/8 bg-soft p-6"
+                className="relative rounded-2xl border border-navy/8 bg-white p-6"
               >
                 <span className="font-display text-4xl font-bold text-gold/80">
                   {step.step}
@@ -210,53 +252,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Safe trust strip */}
       <section className="pattern-navy py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 text-center">
-            <PlaceholderBanner>Example figures — replace with your real outcomes</PlaceholderBanner>
-          </div>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {EXAMPLE_STATS.map((stat) => (
+            {TRUST_STRIP.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="font-display text-4xl font-bold text-gold sm:text-5xl">
+                <p className="font-display text-3xl font-bold text-gold sm:text-4xl">
                   {stat.value}
                 </p>
                 <p className="mt-2 text-sm text-white/80">{stat.label}</p>
-                <p className="mt-1 text-[10px] uppercase tracking-wider text-white/40">
-                  {stat.note}
-                </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Families"
-            title="What parents & students say"
-            subtitle="Sample feedback to illustrate tone — swap in real reviews when you have them."
-          />
-          <div className="grid gap-6 md:grid-cols-3">
-            {TESTIMONIALS.map((t) => (
-              <blockquote
-                key={t.name}
-                className="card-lift flex flex-col rounded-2xl border border-navy/8 bg-soft p-7"
-              >
-                <p className="flex-1 text-base leading-relaxed text-navy/90">
-                  “{t.quote}”
-                </p>
-                <footer className="mt-6 border-t border-navy/10 pt-4">
-                  <p className="font-semibold text-navy">{t.name}</p>
-                  <p className="text-sm text-muted">{t.role}</p>
-                  <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-gold">
-                    {t.note}
-                  </p>
-                </footer>
-              </blockquote>
             ))}
           </div>
         </div>
@@ -284,7 +290,7 @@ export default function HomePage() {
               href="/contact/"
               className="btn-gold rounded-md px-7 py-3.5 text-sm uppercase tracking-wider"
             >
-              Book a free consult
+              Book a free consultation
             </Link>
             <a
               href={SITE.phoneHref}

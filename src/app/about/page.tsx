@@ -41,7 +41,7 @@ export default function AboutPage() {
               <p>
                 Bright Path Tuition is a online tutoring service specialising
                 in <strong className="text-navy">Mathematics</strong>, with strong
-                live online Maths support across KS3, GCSE and A-level for students following the British curriculum anywhere in the world — especially the Middle East and Far East. Science is next on the roadmap, then English.
+                live online Maths support across KS3, GCSE and A-level for students following the British curriculum worldwide. Science and English programmes coming soon.
               </p>
               <p>
                 Our tutors know the AQA, Edexcel and OCR specifications inside out.
@@ -91,7 +91,7 @@ export default function AboutPage() {
               href="/contact/"
               className="btn-primary inline-block rounded-md px-7 py-3.5 text-sm font-semibold uppercase tracking-wider"
             >
-              Meet us — book a consult
+              Meet us — book a consultation
             </Link>
           </div>
         </div>

@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Live online Maths tuition for the British curriculum — KS3, GCSE and A-level — for students worldwide, including the Middle East and Far East. Science and English coming soon. Book a free consultation.",
+    "Live online Maths tuition for the British curriculum — KS3, GCSE and A-level — for students in the UK and worldwide. Science and English programmes coming soon. Book a free consultation.",
   keywords: [
     "online Maths tuition",
     "GCSE Maths tutor",
     "A-level Maths",
     "KS3 tuition",
-    "Maths tutor Far East",
+    "British curriculum Maths tutor",
     "Bright Path Tuition",
   ],
   openGraph: {

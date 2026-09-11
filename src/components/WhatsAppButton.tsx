@@ -1,6 +1,16 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { SITE } from "@/lib/constants";
 
 export default function WhatsAppButton() {
+  const [showBubble, setShowBubble] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowBubble(false), 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <a
       href={SITE.whatsapp}
@@ -9,7 +19,11 @@ export default function WhatsAppButton() {
       className="fixed bottom-5 right-5 z-50 flex items-center gap-2 group"
       aria-label="Chat on WhatsApp"
     >
-      <span className="hidden rounded-full bg-white px-4 py-2 text-sm text-navy shadow-lg shadow-navy/15 sm:inline-block group-hover:shadow-xl transition">
+      <span
+        className={`hidden rounded-full bg-white px-4 py-2 text-sm text-navy shadow-lg shadow-navy/15 sm:inline-block group-hover:shadow-xl transition-opacity duration-500 ${
+          showBubble ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
         Need help? <strong>Chat with us</strong>
       </span>
       <span className="wa-pulse flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg">

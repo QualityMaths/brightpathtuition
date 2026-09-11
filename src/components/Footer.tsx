@@ -9,7 +9,11 @@ export default function Footer() {
         <div className="space-y-4 lg:col-span-1">
           <Logo variant="dark" />
           <p className="text-sm leading-relaxed text-white/75">
-            Live online KS3, GCSE and A-level Maths tuition for the British curriculum — Science next, then English — welcoming students worldwide.
+            Live online Maths tuition for KS3, GCSE and A-Level students following
+            the British curriculum. Supporting students in the UK and worldwide.
+          </p>
+          <p className="text-xs text-white/55">
+            Science and English programmes coming soon.
           </p>
           <p className="text-xs text-gold/80">{SITE.addressNote}</p>
         </div>

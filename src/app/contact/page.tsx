@@ -35,7 +35,7 @@ export default function ContactPage() {
               <SectionHeading
                 centre={false}
                 eyebrow="Get in touch"
-                title="Book a free consult"
+                title="Book a free consultation"
                 subtitle="Share year group, exam board, timezone and goals. All lessons are live online group classes (max 8)."
               />
               <ul className="space-y-4 text-sm text-muted">

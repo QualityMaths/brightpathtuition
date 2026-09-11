@@ -52,7 +52,7 @@ export default function Navbar() {
             href="/contact/"
             className="btn-primary hidden rounded-md px-4 py-2.5 text-[12px] font-semibold uppercase tracking-wider sm:inline-block"
           >
-            Book a free consult
+            Book a free consultation
           </Link>
           <button
             type="button"
@@ -91,7 +91,7 @@ export default function Navbar() {
               href="/contact/"
               className="btn-primary mt-2 rounded-md px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider"
             >
-              Book a free consult
+              Book a free consultation
             </Link>
           </nav>
         </div>

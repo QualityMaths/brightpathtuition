@@ -61,7 +61,7 @@ export default function SubjectsPage() {
                   </div>
                 ) : (
                   <p className="mt-6 text-xs font-semibold uppercase tracking-wider text-gold">
-                    Not bookable yet — ask on your consult if you want early interest noted
+                    Not bookable yet — ask on your consultation if you want early interest noted
                   </p>
                 )}
               </article>

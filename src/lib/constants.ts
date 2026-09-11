@@ -3,12 +3,12 @@ export const SITE = {
   tagline: "Online British-curriculum Maths tuition — KS3, GCSE & A-level, worldwide",
   domain: "brightpathtuition.london",
   url: "https://brightpathtuition.london",
-  email: "gulsenerhan@gmail.com",
+  email: "hello@brightpathtuition.london",
   phone: "07951 647 672",
   phoneHref: "tel:+447951647672",
   whatsapp: "https://wa.me/447951647672",
   address: "Live online — British curriculum students worldwide",
-  addressNote: "Especially welcoming families in the Middle East & Far East",
+  addressNote: "UK teaching expertise, available to students worldwide",
   hours: "Weekday daytime slots available · evenings by arrangement",
   social: {
     facebook: "https://facebook.com/",
@@ -51,7 +51,7 @@ export const PROGRAMMES = [
     title: "A-level Tuition",
     subtitle: "Years 12–13",
     description:
-      "Deep Maths mastery for university pathways — including Further Maths where needed.",
+      "Build the depth, problem-solving skills and exam technique needed for A-Level success and university progression.",
     image:
       "/images/alevel.jpg",
   },
@@ -101,44 +101,20 @@ export const STEPS = [
   {
     step: "03",
     title: "Weekly tuition",
-    text: "Focused live online group lessons (max 8), with homework that matters.",
+    text: "Focused live online group lessons (max 8), with targeted homework and feedback.",
   },
   {
     step: "04",
     title: "Progress reviews",
-    text: "Regular parent updates and mock-exam checkpoints keep everyone on the same page.",
+    text: "Regular parent updates and progress checkpoints keep everyone on the same page.",
   },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote:
-      "My daughter went from a grade 4 to a solid 7 in GCSE Maths. The tutors explain things in a way school never quite managed.",
-    name: "Sarah M.",
-    role: "Parent, Year 11",
-    note: "[EXAMPLE TESTIMONIAL]",
-  },
-  {
-    quote:
-      "Bright Path made A-level Maths click. Past-paper practice every week meant I walked into the exam feeling prepared.",
-    name: "James K.",
-    role: "Student, Year 13",
-    note: "[EXAMPLE TESTIMONIAL]",
-  },
-  {
-    quote:
-      "Professional, punctual and genuinely caring. We finally feel our son is catching up — and enjoying Maths again.",
-    name: "Priya & Raj D.",
-    role: "Parents, Year 8",
-    note: "[EXAMPLE TESTIMONIAL]",
-  },
-] as const;
-
-export const EXAMPLE_STATS = [
-  { value: "98%", label: "Students improve by ≥1 grade", note: "Example figure" },
-  { value: "12+", label: "Years tutoring experience", note: "Example figure" },
-  { value: "250+", label: "Families supported worldwide", note: "Example figure" },
-  { value: "1:8", label: "Max group size", note: "Example figure" },
+export const TRUST_STRIP = [
+  { value: "13+", label: "Years tutoring experience" },
+  { value: "Max 8", label: "Students per group" },
+  { value: "British", label: "Curriculum specialists" },
+  { value: "AQA · Edexcel · OCR", label: "Exam boards" },
 ] as const;
 
 export const PRICING = [

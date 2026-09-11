@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
             href="/contact/"
             className="btn-primary rounded-md px-5 py-2.5 text-sm font-semibold uppercase tracking-wider"
           >
-            Book a free consult
+            Book a free consultation
           </Link>
         </div>
       </div>
