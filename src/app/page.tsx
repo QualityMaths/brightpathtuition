@@ -49,13 +49,14 @@ export default function HomePage() {
         />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative mx-auto flex min-h-[78vh] max-w-7xl flex-col items-center justify-end px-4 pb-16 pt-28 text-center sm:min-h-[85vh] sm:px-6 sm:pb-20 lg:px-8">
-          <PlaceholderBanner>London school tuition · KS3 / GCSE / A-level</PlaceholderBanner>
+          <PlaceholderBanner>Live online · British curriculum · KS3 / GCSE / A-level</PlaceholderBanner>
           <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
             Learning is a lifelong adventure
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85 sm:text-xl">
-            Expert Maths tuition for KS3, GCSE and A-level — exam-board aligned,
-            progress you can measure, confidence that lasts.
+            Live online Maths tuition for the British curriculum — for students
+            worldwide, with weekday daytime availability. Exam-board aligned,
+            progress you can measure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -100,7 +101,7 @@ export default function HomePage() {
             light
             eyebrow="Programmes"
             title="Give your studies a Bright Path"
-            subtitle="Structured pathways from Key Stage 3 through A-level — designed around how London schools actually assess."
+            subtitle="Structured pathways from Key Stage 3 through A-level — built around British exam boards (AQA, Edexcel, OCR), delivered live online."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {PROGRAMMES.map((p) => (

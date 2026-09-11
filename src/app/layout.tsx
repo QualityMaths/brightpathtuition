@@ -19,17 +19,17 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} | London KS3, GCSE & A-level Tuition`,
+    default: `${SITE.name} | Online British Curriculum Maths Tuition`,
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Premium Maths tuition for KS3, GCSE and A-level students across Greater London. Science and English coming soon. AQA, Edexcel and OCR. Book a free consultation.",
+    "Live online Maths tuition for the British curriculum — KS3, GCSE and A-level — for students worldwide, including the Middle East and Far East. Science and English coming soon. Book a free consultation.",
   keywords: [
-    "tuition London",
+    "online Maths tuition",
     "GCSE Maths tutor",
     "A-level Maths",
     "KS3 tuition",
-    "private tutor London",
+    "Maths tutor Far East",
     "Bright Path Tuition",
   ],
   openGraph: {
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE.url,
     siteName: SITE.name,
-    title: `${SITE.name} | London KS3, GCSE & A-level Tuition`,
+    title: `${SITE.name} | Online British Curriculum Maths Tuition`,
     description:
-      "Expert Maths tuition for KS3, GCSE and A-level — online and across Greater London. Science next, then English.",
+      "Live online British-curriculum Maths tuition for KS3, GCSE and A-level — welcoming students worldwide. Science next, then English.",
   },
   twitter: {
     card: "summary_large_image",

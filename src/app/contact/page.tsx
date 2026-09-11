@@ -36,7 +36,7 @@ export default function ContactPage() {
                 centre={false}
                 eyebrow="Get in touch"
                 title="Book a free consult"
-                subtitle="Share year group, subjects and goals. We will suggest the best format and tutor match."
+                subtitle="Share year group, exam board, timezone and goals. All lessons are live online group classes (max 8)."
               />
               <ul className="space-y-4 text-sm text-muted">
                 <li>

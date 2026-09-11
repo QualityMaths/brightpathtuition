@@ -50,7 +50,7 @@ export default function TopBar() {
           </a>
         </div>
         <p className="truncate text-gold/90">
-          Free consultation available · {SITE.hours}
+          Free consultation · {SITE.hours}
         </p>
       </div>
     </div>

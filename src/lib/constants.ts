@@ -1,15 +1,15 @@
 export const SITE = {
   name: "Bright Path Tuition",
-  tagline: "Expert Maths tuition for KS3, GCSE & A-level across London",
+  tagline: "Online British-curriculum Maths tuition — KS3, GCSE & A-level, worldwide",
   domain: "brightpathtuition.london",
   url: "https://brightpathtuition.london",
-  email: "hello@brightpathtuition.london",
+  email: "gulsenerhan@gmail.com",
   phone: "07951 647 672",
   phoneHref: "tel:+447951647672",
   whatsapp: "https://wa.me/447951647672",
-  address: "North London & online across Greater London",
-  addressNote: "[PLACEHOLDER — replace with your teaching venue or keep as online]",
-  hours: "Monday–Saturday, 9am–8pm",
+  address: "Live online — British curriculum students worldwide",
+  addressNote: "Especially welcoming families in the Middle East & Far East",
+  hours: "Weekday daytime slots available · evenings by arrangement",
   social: {
     facebook: "https://facebook.com/",
     instagram: "https://instagram.com/",
@@ -33,7 +33,7 @@ export const PROGRAMMES = [
     title: "KS3 Tuition",
     subtitle: "Years 7–9",
     description:
-      "Build rock-solid Maths foundations so secondary school feels manageable — and enjoyable.",
+      "Build rock-solid Maths foundations for the British curriculum — wherever you are in the world.",
     image:
       "/images/ks3.jpg",
   },
@@ -42,7 +42,7 @@ export const PROGRAMMES = [
     title: "GCSE Tuition",
     subtitle: "Years 10–11",
     description:
-      "Exam-board focused teaching for AQA, Edexcel and OCR. Past papers, mark schemes and confidence that sticks.",
+      "Live online, exam-board focused teaching for AQA, Edexcel and OCR. Past papers, mark schemes and confidence that sticks.",
     image:
       "/images/gcse.jpg",
   },
@@ -101,7 +101,7 @@ export const STEPS = [
   {
     step: "03",
     title: "Weekly tuition",
-    text: "Focused 1:1 or small-group lessons online or in person, with homework that matters.",
+    text: "Focused live online group lessons (max 8), with homework that matters.",
   },
   {
     step: "04",
@@ -115,21 +115,21 @@ export const TESTIMONIALS = [
     quote:
       "My daughter went from a grade 4 to a solid 7 in GCSE Maths. The tutors explain things in a way school never quite managed.",
     name: "Sarah M.",
-    role: "Parent, Year 11 — Barnet",
+    role: "Parent, Year 11",
     note: "[EXAMPLE TESTIMONIAL]",
   },
   {
     quote:
       "Bright Path made A-level Maths click. Past-paper practice every week meant I walked into the exam feeling prepared.",
     name: "James K.",
-    role: "Student, Year 13 — Camden",
+    role: "Student, Year 13",
     note: "[EXAMPLE TESTIMONIAL]",
   },
   {
     quote:
       "Professional, punctual and genuinely caring. We finally feel our son is catching up — and enjoying Maths again.",
     name: "Priya & Raj D.",
-    role: "Parents, Year 8 — Hackney",
+    role: "Parents, Year 8",
     note: "[EXAMPLE TESTIMONIAL]",
   },
 ] as const;
@@ -137,44 +137,44 @@ export const TESTIMONIALS = [
 export const EXAMPLE_STATS = [
   { value: "98%", label: "Students improve by ≥1 grade", note: "Example figure" },
   { value: "12+", label: "Years tutoring experience", note: "Example figure" },
-  { value: "250+", label: "London families supported", note: "Example figure" },
-  { value: "1:4", label: "Max small-group size", note: "Example figure" },
+  { value: "250+", label: "Families supported worldwide", note: "Example figure" },
+  { value: "1:8", label: "Max group size", note: "Example figure" },
 ] as const;
 
 export const PRICING = [
   {
-    name: "1:1 Online",
-    price: "£45",
-    unit: "per hour",
+    name: "Online group — KS3 Maths",
+    price: "TBC",
+    unit: "per lesson",
     features: [
-      "Live video lessons",
-      "Personalised learning plan",
-      "Weekly progress notes",
-      "Exam-board aligned",
+      "Live online classes",
+      "Maximum 8 students",
+      "British curriculum · KS3",
+      "Weekday daytime slots available",
     ],
     highlight: false,
   },
   {
-    name: "1:1 In person",
-    price: "£55",
-    unit: "per hour",
+    name: "Online group — GCSE Maths",
+    price: "TBC",
+    unit: "per lesson",
     features: [
-      "North London venue / home visits by arrangement",
-      "Personalised learning plan",
-      "Printed resources included",
-      "Exam-board aligned",
+      "Live online classes",
+      "Maximum 8 students",
+      "AQA / Edexcel / OCR",
+      "Foundation & Higher pathways",
     ],
     highlight: true,
   },
   {
-    name: "Small group",
-    price: "£28",
-    unit: "per hour",
+    name: "Online group — A-level Maths",
+    price: "TBC",
+    unit: "per lesson",
     features: [
-      "Max 4 students",
-      "Shared topic focus",
-      "Great value for siblings / peers",
-      "Online or in person",
+      "Live online classes",
+      "Maximum 8 students",
+      "Pure / Statistics / Mechanics",
+      "Further Maths groups by demand",
     ],
     highlight: false,
   },

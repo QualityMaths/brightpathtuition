@@ -7,7 +7,7 @@ import { PROGRAMMES, SUBJECTS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Subjects & Programmes",
   description:
-    "KS3, GCSE and A-level Maths tuition in London. Science and English are on the roadmap. AQA, Edexcel and OCR.",
+    "Live online KS3, GCSE and A-level Maths tuition for British-curriculum students worldwide. Science and English on the roadmap.",
 };
 
 export default function SubjectsPage() {
@@ -15,7 +15,7 @@ export default function SubjectsPage() {
     <>
       <PageHero
         title="Subjects & programmes"
-        subtitle="Maths tuition now — Science next, then English. Every lesson tailored to your exam board and school curriculum."
+        subtitle="Maths tuition now — Science next, then English. Live online classes for British-curriculum learners anywhere in the world."
         image="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80"
       />
 

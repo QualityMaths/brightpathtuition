@@ -8,7 +8,7 @@ import { PRICING } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent example pricing for 1:1 and small-group tuition online and in person across London.",
+    "Group online Maths tuition (max 8 students). Pricing to be confirmed — enquire for current rates.",
 };
 
 export default function PricingPage() {
@@ -16,7 +16,7 @@ export default function PricingPage() {
     <>
       <PageHero
         title="Pricing"
-        subtitle="Clear packages so you can plan with confidence. All figures below are examples."
+        subtitle="Live online group classes — maximum 8 students. Exact rates coming soon; enquire and we will confirm."
         image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80"
       />
 
@@ -24,13 +24,13 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 text-center">
             <PlaceholderBanner>
-              EXAMPLE PRICES — confirm final rates with the owner before publishing
+              PRICES TBC — group lessons (max 8). Final rates coming shortly
             </PlaceholderBanner>
           </div>
           <SectionHeading
             eyebrow="Packages"
-            title="Simple, flexible tuition rates"
-            subtitle="Packages can be adjusted for siblings, intensive revision blocks and exam-season boosts."
+            title="Online group Maths classes"
+            subtitle="All lessons are live online. Groups are capped at 8 so every student still gets attention. Weekday daytime slots available."
           />
           <div className="grid gap-6 lg:grid-cols-3">
             {PRICING.map((tier) => (
@@ -100,8 +100,7 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-10 text-center text-sm text-muted">
-            Block bookings and sibling discounts available on request.{" "}
-            <span className="text-gold">[PLACEHOLDER terms]</span>
+            Pricing will be published here shortly. Message us for current group rates and available class times.
           </p>
         </div>
       </section>

@@ -47,20 +47,20 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "online-vs-in-person-tuition",
-    title: "Online vs in-person tuition: what London families should know",
+    slug: "online-maths-for-british-curriculum-abroad",
+    title: "Why live online Maths works for British-curriculum families abroad",
     excerpt:
-      "Convenience, focus and results — an honest comparison so you can choose the format that suits your household.",
+      "Following the British curriculum from the Middle East or Far East? Live online group classes keep your child aligned with UK exam boards — without relocating.",
     date: "2026-01-18",
     readTime: "4 min read",
     category: "Parents",
     image:
       "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=1200&q=80",
     content: [
-      "Since 2020, online tuition has become mainstream — and for many London families it is now the default. Travel time disappears, scheduling is easier, and digital whiteboards make Maths and Science surprisingly visual.",
-      "In-person lessons still shine when a student needs closer behavioural support, prefers handwriting on paper, or when siblings share a venue. Some learners simply concentrate better face to face.",
-      "Results depend far more on tutor quality, lesson structure and consistency than on the medium. We offer both formats at Bright Path so families can switch as exams approach.",
-      "Not sure which to choose? Book a free consultation and we will recommend a format based on your child’s learning style and your logistics.",
+      "Many families overseas want their children to sit UK GCSEs and A-levels — or simply stay aligned with the British curriculum. Live online Maths tuition removes the geography problem while keeping teaching tied to AQA, Edexcel and OCR.",
+      "Weekday daytime lessons (UK time) often suit students in the Middle East and Far East better than evening slots, and group classes of up to eight keep learning social without losing focus.",
+      "Digital whiteboards, shared past papers and recorded homework feedback mean progress is as visible online as in a classroom — sometimes more so.",
+      "If you are abroad and following the British curriculum, book a free consultation and we will match a live online Maths group to your child’s stage and timezone.",
       "[This is sample blog content for Bright Path Tuition — replace with your own advice.]",
     ],
   },
