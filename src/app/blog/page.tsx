@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { SITE } from "@/lib/constants";
+
 
 export const metadata: Metadata = {
   title: "Moved to Resources",
   description: "This section has moved to Research, Guidance & Parent Resources.",
   robots: { index: false, follow: true },
+  alternates: { canonical: `${SITE.url}/blog/` },
 };
 
 export default function BlogRedirectPage() {

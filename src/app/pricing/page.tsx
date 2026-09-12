@@ -2,12 +2,47 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
-import { PRICING } from "@/lib/constants";
+import { PRICING, SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
     "Simple, transparent pricing for live online Maths tuition. Group fees from £110 every 4 weeks (max 8 students). One-to-one rates also available.",
+  alternates: { canonical: `${SITE.url}/pricing/` },
+};
+
+const FAQ_ITEMS = [
+  {
+    question: "Are there any joining fees?",
+    answer: "No.",
+  },
+  {
+    question: "How are fees paid?",
+    answer: "Fees are paid in four-week blocks in advance.",
+  },
+  {
+    question: "What happens if my child misses a lesson?",
+    answer:
+      "Group fees reserve your child's place in the class, so missed lessons are not normally refundable. Where appropriate, lesson materials and homework will still be provided.",
+  },
+  {
+    question: "Can my child try a lesson first?",
+    answer:
+      "Where a suitable group has availability, we can arrange a trial lesson before you commit to a four-week block.",
+  },
+] as const;
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
 };
 
 const ONE_TO_ONE = [
@@ -20,6 +55,10 @@ const ONE_TO_ONE = [
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <PageHero
         title="Simple, transparent pricing"
         subtitle="Live online Maths tuition with small-group and one-to-one options. Group fees are paid every four weeks and include four 1-hour lessons."

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Book a free consultation with Bright Path Tuition. Get in touch by phone, email or WhatsApp.",
+  alternates: { canonical: `${SITE.url}/contact/` },
 };
 
 export default function ContactPage() {

@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
+import { SITE } from "@/lib/constants";
+
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
     "Meet Erhan Gulsen and Bright Path Tuition — live online British-curriculum Maths from KS2 through A-Level, built on 13+ years of teaching and tutoring.",
+  alternates: { canonical: `${SITE.url}/about/` },
 };
 
 const CREDENTIALS = [

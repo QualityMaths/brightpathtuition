@@ -3,11 +3,14 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import { RESOURCES } from "@/lib/resources";
+import { SITE } from "@/lib/constants";
+
 
 export const metadata: Metadata = {
   title: "Research, Guidance & Parent Resources",
   description:
     "Curated research and official guidance on Maths teaching and tuition, including Education Endowment Foundation evidence on small-group and one-to-one tuition.",
+  alternates: { canonical: `${SITE.url}/resources/` },
 };
 
 export default function ResourcesPage() {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 import PlaceholderBanner from "@/components/PlaceholderBanner";
@@ -8,6 +9,11 @@ import {
   STEPS,
   TRUST_STRIP,
 } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  alternates: { canonical: `${SITE.url}/` },
+};
+
 
 const HERO_IMG =
   "/images/hero.jpg";

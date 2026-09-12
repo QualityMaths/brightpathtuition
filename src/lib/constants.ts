@@ -11,10 +11,10 @@ export const SITE = {
   addressNote: "British curriculum teaching for students wherever they are based.",
   hours: "Weekday daytime slots available · evenings by arrangement",
   social: {
-    facebook: "https://facebook.com/",
-    instagram: "https://instagram.com/",
-    linkedin: "https://linkedin.com/",
-    tiktok: "https://tiktok.com/",
+    facebook: "",
+    instagram: "",
+    linkedin: "",
+    tiktok: "",
   },
 } as const;
 

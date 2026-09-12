@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
+import { SITE } from "@/lib/constants";
+
 
 export const metadata: Metadata = {
   title: "Online Maths Tuition — KS2, KS3, GCSE & A-Level",
   description:
     "Live online Maths tuition for KS2, KS3, GCSE and A-Level. Structured British-curriculum teaching with exam-board focused support at GCSE and A-Level.",
+  alternates: { canonical: `${SITE.url}/subjects/` },
 };
 
 const STAGES = [
