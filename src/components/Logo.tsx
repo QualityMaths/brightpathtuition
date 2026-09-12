@@ -5,7 +5,7 @@ type Props = { className?: string; compact?: boolean; variant?: "light" | "dark"
 export default function Logo({ className = "", compact = false, variant = "light" }: Props) {
   const titleColor = "text-gold";
   const subColor = variant === "dark" ? "text-white" : "text-navy";
-  const size = compact ? 36 : 44;
+  const width = compact ? 40 : 52;
 
   return (
     <Link
@@ -13,14 +13,14 @@ export default function Logo({ className = "", compact = false, variant = "light
       className={`inline-flex items-center gap-2.5 group ${className}`}
       aria-label="Bright Path Tuition home"
     >
-      {/* Exact mark cropped from the approved brand sheet */}
+      {/* Exact mark from brand sheet — full book + rays */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/logo-mark.png"
         alt=""
-        width={size}
-        height={size}
-        className="object-contain"
+        width={width}
+        className="h-auto w-[40px] shrink-0 object-contain object-center sm:w-[52px]"
+        style={{ width, height: "auto" }}
       />
       <span className="flex flex-col leading-none">
         <span
