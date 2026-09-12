@@ -7,7 +7,7 @@ import PlaceholderBanner from "@/components/PlaceholderBanner";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet Bright Path Tuition — live online British-curriculum Maths for KS3, GCSE and A-level, with Science and English on the roadmap.",
+    "Meet Bright Path Tuition — live online British-curriculum Maths for KS2, KS3, GCSE and A-Level, with Science and English on the roadmap.",
 };
 
 export default function AboutPage() {
@@ -41,7 +41,7 @@ export default function AboutPage() {
               <p>
                 Bright Path Tuition is a online tutoring service specialising
                 in <strong className="text-navy">Mathematics</strong>, with strong
-                live online Maths support across KS3, GCSE and A-level for students following the British curriculum worldwide. Science and English programmes coming soon.
+                live online Maths support across KS2, KS3, GCSE and A-Level for students following the British curriculum worldwide. Science and English programmes coming soon.
               </p>
               <p>
                 Our tutors know the AQA, Edexcel and OCR specifications inside out.

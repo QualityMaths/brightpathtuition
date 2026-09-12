@@ -48,14 +48,15 @@ export default function HomePage() {
         />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative mx-auto flex min-h-[78vh] max-w-7xl flex-col items-center justify-end px-4 pb-16 pt-28 text-center sm:min-h-[85vh] sm:px-6 sm:pb-20 lg:px-8">
-          <PlaceholderBanner>Live online · British curriculum · KS3 / GCSE / A-level</PlaceholderBanner>
+          <PlaceholderBanner>Live online · British curriculum · KS2 / KS3 / GCSE / A-level</PlaceholderBanner>
           <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Expert Online Maths Tuition for KS3, GCSE &amp; A-Level
+            Expert Online Maths Tuition for KS2, KS3, GCSE &amp; A-Level
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85 sm:text-xl">
             Live, small-group Maths tuition for students following the British
-            curriculum. Exam-board aligned teaching, personalised support and
-            progress you can measure.
+            curriculum — from KS2 through A-Level. Curriculum-aligned teaching,
+            with exam-board focus at GCSE and A-Level, plus progress you can
+            measure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -100,7 +101,7 @@ export default function HomePage() {
             light
             eyebrow="Programmes"
             title="Give your studies a Bright Path"
-            subtitle="Structured pathways from Key Stage 3 through A-level — built around British exam boards (AQA, Edexcel, OCR), delivered live online."
+            subtitle="Structured pathways from KS2 through A-Level — curriculum-aligned teaching, with exam-board focus at GCSE and A-Level, delivered live online."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PROGRAMMES.map((p) => (

@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Online Maths Tuition — KS2, KS3, GCSE & A-Level",
   description:
-    "Live online Maths tuition for KS2, KS3, GCSE and A-Level. Structured, exam-board aligned teaching for British-curriculum students in the UK and worldwide.",
+    "Live online Maths tuition for KS2, KS3, GCSE and A-Level. Structured British-curriculum teaching with exam-board focused support at GCSE and A-Level.",
 };
 
 const STAGES = [
@@ -21,7 +21,7 @@ const STAGES = [
       "Number fluency — place value, the four operations, fractions, decimals and percentages",
       "Geometry, measures and early algebra thinking",
       "Reasoning and problem-solving strategies",
-      "School support aligned to the British primary curriculum",
+      "School support and Year 6 SATs preparation where appropriate",
       "Smooth preparation for the jump to KS3 Maths",
     ],
   },
@@ -37,7 +37,7 @@ const STAGES = [
       "Geometry, probability and statistics",
       "Problem solving and mathematical reasoning",
       "Support alongside school lessons and assessments",
-      "Strong preparation for GCSE Foundation or Higher",
+      "Strong preparation for the transition to GCSE Maths",
     ],
   },
   {
@@ -77,7 +77,7 @@ export default function SubjectsPage() {
     <>
       <PageHero
         title="Online Maths Tuition for KS2, KS3, GCSE & A-Level"
-        subtitle="Structured, exam-board aligned tuition for students following the British curriculum, available in the UK and worldwide."
+        subtitle="Structured online Maths tuition for the British curriculum, from KS2 through A-Level, with exam-board focused support at GCSE and A-Level."
         image="/images/subjects-hero.jpg"
       />
 
@@ -88,15 +88,10 @@ export default function SubjectsPage() {
             title="Mathematics"
             subtitle="Live online Maths tuition from KS2 through A-Level, covering core curriculum knowledge, exam technique, problem solving and targeted support for individual gaps."
           />
-          <div className="mx-auto flex max-w-2xl flex-wrap justify-center gap-2">
-            {["AQA", "Edexcel", "OCR"].map((b) => (
-              <span
-                key={b}
-                className="rounded-md bg-soft px-4 py-2 text-sm font-semibold text-navy shadow-sm ring-1 ring-navy/8"
-              >
-                {b}
-              </span>
-            ))}
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold text-navy">
+              GCSE &amp; A-Level exam boards: AQA · Edexcel · OCR
+            </p>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {STAGES.map((s) => (
@@ -117,7 +112,7 @@ export default function SubjectsPage() {
           <SectionHeading
             eyebrow="By stage"
             title="What we cover at each stage"
-            subtitle="Clear detail for parents who want to know exactly what their child will learn — not a short summary card."
+            subtitle="See how our Maths tuition develops knowledge, confidence and exam skills at every stage."
           />
           {STAGES.map((stage, i) => (
             <article

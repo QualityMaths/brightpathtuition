@@ -23,11 +23,12 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Live online Maths tuition for the British curriculum — KS3, GCSE and A-level — for students in the UK and worldwide. Science and English programmes coming soon. Book a free consultation.",
+    "Live online Maths tuition for the British curriculum — KS2, KS3, GCSE and A-Level — for students in the UK and worldwide. Science and English programmes coming soon. Book a free consultation.",
   keywords: [
     "online Maths tuition",
     "GCSE Maths tutor",
     "A-level Maths",
+    "KS2 tuition",
     "KS3 tuition",
     "British curriculum Maths tutor",
     "Bright Path Tuition",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     title: `${SITE.name} | Online British Curriculum Maths Tuition`,
     description:
-      "Live online British-curriculum Maths tuition for KS3, GCSE and A-level — welcoming students worldwide. Science next, then English.",
+      "Live online British-curriculum Maths tuition for KS2, KS3, GCSE and A-Level — welcoming students worldwide. Science next, then English.",
   },
   twitter: {
     card: "summary_large_image",

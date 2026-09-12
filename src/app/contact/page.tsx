@@ -132,6 +132,7 @@ export default function ContactPage() {
                       <option value="" disabled>
                         Select…
                       </option>
+                      <option>KS2 (Y3–6)</option>
                       <option>KS3 (Y7–9)</option>
                       <option>GCSE (Y10–11)</option>
                       <option>A-level (Y12–13)</option>

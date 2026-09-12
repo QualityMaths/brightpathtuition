@@ -7,7 +7,7 @@ import { BLOG_POSTS } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Practical advice for British-curriculum parents and students on GCSE, A-level and KS3 Maths success.",
+    "Practical advice for British-curriculum parents and students on KS2, KS3, GCSE and A-Level Maths success.",
 };
 
 export default function BlogPage() {
