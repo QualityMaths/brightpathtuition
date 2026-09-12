@@ -76,11 +76,14 @@ export default function AboutPage() {
           </div>
 
           <div className="mx-auto mt-14 max-w-3xl space-y-4 text-center text-muted leading-relaxed">
+            <h3 className="text-xl font-bold text-navy sm:text-2xl">
+              Our approach to teaching
+            </h3>
             <p>
-              Our Maths tuition is aligned with the major UK exam boards,
-              including AQA, Edexcel and OCR. Lessons combine strong subject
-              teaching with exam technique, targeted practice and past-paper
-              preparation where appropriate.
+              At GCSE and A-Level, our Maths tuition is aligned with the major
+              UK exam boards, including AQA, Edexcel and OCR. Lessons combine
+              strong subject teaching with exam technique, targeted practice
+              and past-paper preparation where appropriate.
             </p>
             <p>
               Whether your child needs to close gaps, build confidence or work
