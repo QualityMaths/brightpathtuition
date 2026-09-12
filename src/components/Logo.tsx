@@ -5,7 +5,12 @@ type Props = { className?: string; compact?: boolean; variant?: "light" | "dark"
 export default function Logo({ className = "", compact = false, variant = "light" }: Props) {
   const titleColor = "text-gold";
   const subColor = variant === "dark" ? "text-white" : "text-navy";
-  const width = compact ? 40 : 52;
+  // Larger mark so the full book + rays stay clear in the header
+  const width = compact ? 48 : 64;
+  const src =
+    variant === "dark"
+      ? "/images/logo-icon-dark.png?v=20260912b"
+      : "/images/logo-mark-v2.png?v=20260912b";
 
   return (
     <Link
@@ -13,13 +18,13 @@ export default function Logo({ className = "", compact = false, variant = "light
       className={`inline-flex items-center gap-2.5 group ${className}`}
       aria-label="Bright Path Tuition home"
     >
-      {/* Exact mark from brand sheet — full book + rays */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={variant === "dark" ? "/images/logo-icon-dark.png" : "/images/logo-mark.png"}
+        src={src}
         alt=""
         width={width}
-        className="h-auto w-[40px] shrink-0 object-contain object-center sm:w-[52px]"
+        height={Math.round(width * 0.83)}
+        className="h-auto shrink-0 object-contain object-center"
         style={{ width, height: "auto" }}
       />
       <span className="flex flex-col leading-none">
