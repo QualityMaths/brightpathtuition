@@ -102,11 +102,11 @@ export default function HomePage() {
             title="Give your studies a Bright Path"
             subtitle="Structured pathways from Key Stage 3 through A-level — built around British exam boards (AQA, Edexcel, OCR), delivered live online."
           />
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PROGRAMMES.map((p) => (
               <Link
                 key={p.slug}
-                href="/subjects/"
+                href={`/subjects/#${p.slug}`}
                 className="card-lift group relative overflow-hidden rounded-2xl"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}

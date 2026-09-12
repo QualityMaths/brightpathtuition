@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Bright Path Tuition",
-  tagline: "Online British-curriculum Maths tuition — KS3, GCSE & A-level, worldwide",
+  tagline: "Online British-curriculum Maths tuition — KS2 to A-level, worldwide",
   domain: "brightpathtuition.london",
   url: "https://brightpathtuition.london",
   email: "hello@brightpathtuition.london",
@@ -29,13 +29,20 @@ export const NAV_LINKS = [
 
 export const PROGRAMMES = [
   {
+    slug: "ks2",
+    title: "KS2 Tuition",
+    subtitle: "Years 3–6",
+    description:
+      "Secure primary Maths foundations — number fluency, reasoning and problem solving — ready for secondary school.",
+    image: "/images/ks2.jpg",
+  },
+  {
     slug: "ks3",
     title: "KS3 Tuition",
     subtitle: "Years 7–9",
     description:
       "Build rock-solid Maths foundations for the British curriculum — wherever you are in the world.",
-    image:
-      "/images/ks3.jpg",
+    image: "/images/ks3.jpg",
   },
   {
     slug: "gcse",
@@ -43,8 +50,7 @@ export const PROGRAMMES = [
     subtitle: "Years 10–11",
     description:
       "Live online, exam-board focused teaching for AQA, Edexcel and OCR. Past papers, mark schemes and confidence that sticks.",
-    image:
-      "/images/gcse.jpg",
+    image: "/images/gcse.jpg",
   },
   {
     slug: "a-level",
@@ -52,8 +58,7 @@ export const PROGRAMMES = [
     subtitle: "Years 12–13",
     description:
       "Build the depth, problem-solving skills and exam technique needed for A-Level success and university progression.",
-    image:
-      "/images/alevel.jpg",
+    image: "/images/alevel.jpg",
   },
 ] as const;
 
@@ -63,7 +68,7 @@ export const SUBJECTS = [
     status: "available" as const,
     badge: "Available now",
     blurb:
-      "Our focus today — from KS3 number skills through GCSE Foundation & Higher to A-level Pure, Statistics and Mechanics (and Further Maths where needed).",
+      "From the full KS2 and KS3 curriculum through GCSE Foundation & Higher and A-Level Pure, Statistics and Mechanics.",
     boards: ["AQA", "Edexcel", "OCR"],
     icon: "maths",
   },
@@ -119,6 +124,18 @@ export const TRUST_STRIP = [
 
 export const PRICING = [
   {
+    name: "Online group — KS2 Maths",
+    price: "TBC",
+    unit: "per lesson",
+    features: [
+      "Live online classes",
+      "Maximum 8 students",
+      "British curriculum · KS2",
+      "Weekday daytime slots available",
+    ],
+    highlight: false,
+  },
+  {
     name: "Online group — KS3 Maths",
     price: "TBC",
     unit: "per lesson",
@@ -150,7 +167,7 @@ export const PRICING = [
       "Live online classes",
       "Maximum 8 students",
       "Pure / Statistics / Mechanics",
-      "Further Maths groups by demand",
+      "Exam technique & past papers",
     ],
     highlight: false,
   },
