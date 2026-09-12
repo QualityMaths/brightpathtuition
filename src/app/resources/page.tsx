@@ -24,7 +24,7 @@ export default function ResourcesPage() {
           <SectionHeading
             eyebrow="What the research says"
             title="Evidence we draw on"
-            subtitle="Bright Path does not invent studies or statistics. Each card below is a short Bright Path summary of a genuine external source, with a link to read the original."
+            subtitle="We summarise trusted educational research and official guidance in plain English, with direct links to the original sources."
           />
 
           <div className="mx-auto grid max-w-5xl gap-8">

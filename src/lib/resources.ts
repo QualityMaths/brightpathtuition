@@ -15,7 +15,7 @@ export const RESOURCES: Resource[] = [
     href: "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/small-group-tuition",
   },
   {
-    title: "One to one tuition",
+    title: "One-to-one tuition",
     source: "Education Endowment Foundation",
     summary:
       "The EEF toolkit entry on one-to-one tuition summarises evidence that intensive individual support can be an effective way to help pupils who need targeted help in a particular area, especially when tuition is linked to classroom teaching and carefully monitored.",
