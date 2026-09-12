@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <rect width="44" height="44" rx="10" fill="#031f42"/>
-  <path d="M12 30V14h6.2c3.4 0 5.5 1.85 5.5 4.55 0 1.7-.9 3.05-2.45 3.75L28 30h-4.3l-5.85-7.2H16.2V30H12zm4.2-10.55h1.85c1.55 0 2.45-.75 2.45-1.95s-.9-1.9-2.45-1.9H16.2v3.85z" fill="#C9A227"/>
-  <path d="M30.5 14l1.15 3.55H35.5L31.9 19.8l1.2 3.6L30.5 21.2l-2.6 2.2 1.2-3.6-3.6-2.25h3.85L30.5 14z" fill="#ffc221"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0B1B33"/>
+  <!-- gold rays -->
+  <path d="M32 14 L34.2 28 L29.8 28 Z" fill="#C9A227"/>
+  <path d="M22 16 L30.5 29 L27.2 31 Z" fill="#C9A227"/>
+  <path d="M42 16 L36.8 31 L33.5 29 Z" fill="#C9A227"/>
+  <path d="M14 22 L28 31.5 L26 34.5 Z" fill="#D4AF37"/>
+  <path d="M50 22 L38 34.5 L36 31.5 Z" fill="#D4AF37"/>
+  <!-- open book (white for dark favicon) -->
+  <path d="M32 34 C28 34 20 32 14 28 L14 48 C20 51 28 52 32 52 C36 52 44 51 50 48 L50 28 C44 32 36 34 32 34 Z" fill="#F5F7FA"/>
+  <path d="M32 34 V52" stroke="#0B1B33" stroke-width="1.5" opacity="0.35"/>
+  <path d="M14 28 C20 32 28 34 32 34 C36 34 44 32 50 28" stroke="#C9A227" stroke-width="1.2" fill="none" opacity="0.5"/>
 </svg>
