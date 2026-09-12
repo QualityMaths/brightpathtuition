@@ -7,8 +7,8 @@ export const SITE = {
   phone: "07951 647 672",
   phoneHref: "tel:+447951647672",
   whatsapp: "https://wa.me/447951647672",
-  address: "Live online — British curriculum students worldwide",
-  addressNote: "UK teaching expertise, available to students worldwide",
+  address: "Online tuition — UK & worldwide",
+  addressNote: "British curriculum teaching for students wherever they are based.",
   hours: "Weekday daytime slots available · evenings by arrangement",
   social: {
     facebook: "https://facebook.com/",
