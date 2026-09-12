@@ -22,7 +22,7 @@ export default function PricingPage() {
     <>
       <PageHero
         title="Simple, transparent pricing"
-        subtitle="Live online Maths tuition in small groups of no more than 8 students. Group fees are paid every four weeks and include four 1-hour lessons."
+        subtitle="Live online Maths tuition with small-group and one-to-one options. Group fees are paid every four weeks and include four 1-hour lessons."
         image="/images/pricing-hero.jpg"
       />
 
@@ -108,7 +108,7 @@ export default function PricingPage() {
                 </ul>
                 <Link
                   href="/contact/"
-                  className={`mt-8 block rounded-md py-3 text-center text-sm font-semibold uppercase tracking-wider transition ${
+                  className={`mt-8 block rounded-md px-3 py-3 text-center text-xs font-semibold uppercase leading-snug tracking-wide transition sm:text-sm sm:tracking-wider ${
                     tier.highlight ? "btn-gold" : "btn-primary"
                   }`}
                 >
@@ -118,7 +118,10 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-muted leading-relaxed">
+          <p className="mx-auto mt-8 max-w-3xl text-center text-sm font-semibold text-navy">
+            No registration or joining fee.
+          </p>
+          <p className="mx-auto mt-3 max-w-3xl text-center text-sm text-muted leading-relaxed">
             Group places are subject to suitable year-group and timetable
             availability. We&apos;ll confirm the best class during your free
             consultation.
@@ -187,8 +190,9 @@ export default function PricingPage() {
                 What happens if my child misses a lesson?
               </dt>
               <dd className="mt-2 text-sm text-muted leading-relaxed">
-                We&apos;ll confirm our missed-lesson policy during your free
-                consultation.
+                Group fees reserve your child&apos;s place in the class, so
+                missed lessons are not normally refundable. Where appropriate,
+                lesson materials and homework will still be provided.
               </dd>
             </div>
             <div className="rounded-2xl border border-navy/8 bg-white p-6">
@@ -196,7 +200,8 @@ export default function PricingPage() {
                 Can my child try a lesson first?
               </dt>
               <dd className="mt-2 text-sm text-muted leading-relaxed">
-                We&apos;ll confirm trial options during your free consultation.
+                Where a suitable group has availability, we can arrange a trial
+                lesson before you commit to a four-week block.
               </dd>
             </div>
           </dl>

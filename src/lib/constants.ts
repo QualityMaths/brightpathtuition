@@ -161,7 +161,7 @@ export const PRICING = [
     price: "£140",
     unit: "every 4 weeks",
     perLesson: "£35 per lesson",
-    badge: "GCSE Foundation & Higher",
+    badge: "Foundation & Higher",
     features: [
       "4 × 1-hour live online lessons",
       "Maximum 8 students",
